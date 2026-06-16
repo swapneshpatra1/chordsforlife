@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-zinc-950 text-zinc-100 font-sans antialiased;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-zinc-900;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-zinc-700 rounded-full;
+  }
+}
+
+@layer utilities {
+  .fret-dot {
+    @apply w-4 h-4 rounded-full bg-indigo-400;
+  }
+
+  .fret-open {
+    @apply w-4 h-4 rounded-full border-2 border-zinc-400;
+  }
+
+  .fret-mute {
+    @apply text-zinc-500 font-bold text-sm;
+  }
+}
